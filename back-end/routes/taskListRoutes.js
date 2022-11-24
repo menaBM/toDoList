@@ -2,11 +2,12 @@ const { Router } = require("express");
 const taskRouter = Router();
 const {Task, User} = require("../models");
 
-// GET all the tasks within the database
+// GET all the tasks within the database [WORKING]
 taskRouter.get("/", async (req, res) => {
     const allTasks = await Task.findAll();
-    res.status(200).send(allTasks);
+    res.status(200).send({task: allTasks});
 })
+
 
 // GET all the tasks with a specific date
 taskRouter.get("/allTasks/:date", async (req, res) => {

@@ -4,11 +4,6 @@ const { Model, DataTypes } = require('sequelize'),
 class Task extends Model{}
 
 Task.init({
-    id: {
-        type: DataTypes.INTEGER,
-        autoIncrement: true,
-        primaryKey: true
-    },
     authorName: {
         type: DataTypes.STRING,
         allowNull: false

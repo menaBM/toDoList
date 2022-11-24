@@ -4,12 +4,6 @@ const { Model, DataTypes } = require('sequelize'),
 class User extends Model{}
 
 User.init({
-    id: {
-        type: DataTypes.INTEGER,
-        //Makes it able to go from 1-2-3 etc
-        autoIncrement: true,
-        primaryKey: true
-    },
     userName: {
         type: DataTypes.STRING,
         allownull: false

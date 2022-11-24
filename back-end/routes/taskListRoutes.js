@@ -8,7 +8,6 @@ taskRouter.get("/", async (req, res) => {
     res.status(200).send({task: allTasks});
 })
 
-
 // GET all the tasks with a specific date [WORKING]
 taskRouter.get("/allTasks/:date", async (req, res) => {
     const dateTasks = await Task.findAll({

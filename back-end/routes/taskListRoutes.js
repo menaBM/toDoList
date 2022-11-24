@@ -9,7 +9,7 @@ taskRouter.get("/", async (req, res) => {
 })
 
 
-// GET all the tasks with a specific date
+// GET all the tasks with a specific date [WORKING]
 taskRouter.get("/allTasks/:date", async (req, res) => {
     const dateTasks = await Task.findAll({
         where: {date: req.params.date}
@@ -17,6 +17,7 @@ taskRouter.get("/allTasks/:date", async (req, res) => {
     res.status(200).send(dateTasks);
 })
 
+// POST a new task [WORKING]
 taskRouter.post("/new", async (req, res) => {
     await Task.create({
         authorName: req.body.authorName,
@@ -26,6 +27,7 @@ taskRouter.post("/new", async (req, res) => {
     res.sendStatus(200);
 })
 
+// DELETE a specific id [WORKING]
 taskRouter.put("/delete/:id", async (req, res) => {
     const deleteTask = await Task.findByPk(req.params.id);
     await deleteTask.destroy()

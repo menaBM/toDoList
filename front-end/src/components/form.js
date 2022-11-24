@@ -6,7 +6,7 @@ export default function Form (props){
     const [date, setDate] = useState()
     
     async function submitHandler(){
-        const response = await fetch("http://localhost:3000/new",{
+        const response = await fetch("http://localhost:6000/new",{
             method: "POST",
             body: JSON.stringify({
                 authorName: author,

@@ -33,6 +33,4 @@ taskRouter.put("/delete/:id", async (req, res) => {
     res.status(200).send("Deleted Successfully");
 })
 
-
-
 module.exports = taskRouter;

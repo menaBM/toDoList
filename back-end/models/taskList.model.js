@@ -5,25 +5,25 @@ class Task extends Model{}
 
 Task.init({
     id: {
-        type: DataTypr.INTEGER,
+        type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true
     },
     authorName: {
-        type: DataType.STRING,
+        type: DataTypes.STRING,
         allowNull: false
     },
     task: {
-        type: DataType.STRING,
+        type: DataTypes.STRING,
         allowNull: false
     },
     date: {
-        type: DataType.STRING,
+        type: DataTypes.STRING,
         defaultValue: "N/A"
     }
 }, {
     sequelize: db,
-    modelName: "Tas"
+    modelName: "Task"
 })
 
 

@@ -19,7 +19,7 @@ Task.init({
     },
     date: {
         type: DataTypes.STRING,
-        defaultValue: "N/A"
+        defaultValue: "Not Applicable"
     }
 }, {
     sequelize: db,

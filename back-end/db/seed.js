@@ -25,7 +25,7 @@ async function seed(){
         {
             authorName: "Busoye",
             task: "Go to the gym",
-            date: "15/06/2023"
+            date: "15.06.2023"
         },
         {
             authorName: "Ihsan",
@@ -38,7 +38,7 @@ async function seed(){
         {
             authorName: "Michael",
             task: "Turn on camera",
-            date: "25/11/2022"
+            date: "25.11.2022"
         }
     ], {validate: true})
 }

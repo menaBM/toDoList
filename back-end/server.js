@@ -12,7 +12,7 @@ app.use(cors());
 app.use("/task", taskRouter);
 app.use("/user", userRouter);
 
-app.listen(6000, async () => {
+app.listen(3001, async () => {
     await seed();
-    console.log("Listening on port 6000");
+    console.log("Listening on port 3001");
 });

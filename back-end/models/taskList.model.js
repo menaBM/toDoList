@@ -4,26 +4,21 @@ const { Model, DataTypes } = require('sequelize'),
 class Task extends Model{}
 
 Task.init({
-    id: {
-        type: DataTypr.INTEGER,
-        autoIncrement: true,
-        primaryKey: true
-    },
     authorName: {
-        type: DataType.STRING,
+        type: DataTypes.STRING,
         allowNull: false
     },
     task: {
-        type: DataType.STRING,
+        type: DataTypes.STRING,
         allowNull: false
     },
     date: {
-        type: DataType.STRING,
-        defaultValue: "N/A"
+        type: DataTypes.STRING,
+        defaultValue: "Not Applicable"
     }
 }, {
     sequelize: db,
-    modelName: "Tas"
+    modelName: "Task"
 })
 
 

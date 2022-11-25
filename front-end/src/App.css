@@ -1,20 +1,10 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: #f3e8ee;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f3e8ee;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,11 +18,53 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App Form {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 60vh;
+  margin: 2vh;
+  padding: 3vw;
+  background-color: #8D6A9F;
+  border-radius: 10px;
+}
+
+
+#createItButton {
+  margin-top: 20px;
+  margin-left: 70px;
+  width: 100px;
+  border-radius: 10px;
+  border-color: transparent;
+  opacity: 0.8;
+}
+
+#createItButton:hover{
+  opacity: 1;
+}
+
+.App input{
+  height: 20px;
+  margin: 2vw;
+  opacity: 0.8;
+}
+
+.App input:hover{
+  opacity: 1;
+}
+.App h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  color: #3B1F2B;
+}
+
+.App h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  color: #3B1F2B;
+  background-color: plum;
+}
+
+#formContainer{
+  margin-left: 200px;
 }

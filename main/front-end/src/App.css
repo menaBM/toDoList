@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #f3e8ee;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App Form {
+  display: flex;
+  flex-direction: column;
+  width: 18vw;
+  height: 60vh;
+  margin: 2vh;
+  padding: 3vw;
+  background-color: #8D6A9F;
+  border-radius: 10px;
+}
+
+
+#createItButton {
+  margin-top: 20px;
+  margin-left: 24px;
+  width: 100px;
+  border-radius: 10px;
+  border-color: transparent;
+  opacity: 0.8;
+}
+
+#createItButton:hover{
+  opacity: 1;
+}
+
+.App input{
+  height: 20px;
+  margin: 2vw;
+  opacity: 0.8;
+}
+
+.App input:hover{
+  opacity: 1;
+}
+.App h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  color: #3B1F2B;
+}
+
+.App h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  color: #3B1F2B;
+  background-color: rgb(168, 131, 186);
+}
+
+/* #formContainer{
+  margin-left: 
+} */
+
+/* .toDoListBox {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 70vh;
+  background-color: #8D6A9F;
+} */
+
+/* .toDoListBox {
+  display: flex;
+  justify-content: space-around;
+} */
+
+.toDoListBox {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  margin-top: 15px;
+}
+
+.task {
+  width: 15vw;
+  height: 15vw;
+  background-color: rgb(168, 131, 186);
+  border-radius: 10px;
+  opacity: 0.8;
+  transition: 1s;
+  box-shadow: 5px 5px purple;
+}
+.task:hover {
+  opacity: 1;
+  width: 22vw;
+  height: 16vw;
+}
+
+.task p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300px;
+  margin: 2.5vw;
+}
+
+.mainBox {
+  display: inline-flex;
+}
+
+.filterContainer {
+  background-color: rgba(156, 50, 156, 0.921);
+  width: 17vw;
+  height: 33vw;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 18px;
+  border-radius: 10px;
+}
+
+.filterContainer h2{
+background-color: transparent;
+ 
+  
+}
+
+
+/* #date {
+  display: flex;
+}
+
+
+#author {
+  display: flex;
+} */
+
+#users {
+  margin-top: 5px;
+  margin-left: 10px;
+  width: auto;
+  height: 30px;
+}
+
+main {
+  display: inline-flex;
+}

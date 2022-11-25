@@ -10,8 +10,8 @@ userRouter.get("/", async (req, res) => {
 
 // GET all tasks associated with a user
 userRouter.get("/:id/tasks", async (req, res) => {
-    const findTasks = await Tasks.findAll({where: {UserId: req.params.id}})
-    res.status(200).send({tasks: findTasks})
+    const findTasks = await Task.findAll({where: {UserId: req.params.id}})
+    res.status(200).send({task: findTasks})
 })
 
 module.exports = userRouter;

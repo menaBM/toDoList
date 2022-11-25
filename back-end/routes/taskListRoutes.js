@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const taskRouter = Router();
-const {Task, User} = require("../models");
+const {Task} = require("../models");
 
 // GET all the tasks within the database [WORKING]
 taskRouter.get("/", async (req, res) => {

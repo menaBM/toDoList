@@ -3,9 +3,13 @@ import ToDoItem from './toDoItem';
 
 
 export default function ToDoList(props){
-    return <div>
+    return <div className='toDoListBox'>
             {props.tasks.map((item, index)=>{
-                <ToDoItem task = {item.task} author = {item.author} key = {index} date = {item.date}/>
+                return ( 
+                <>
+                <ToDoItem task = {item.task} author = {item.authorName} key = {index} date = {item.date} id = {item.id}/>
+                </>
+                )
             })}
     </div>
 }

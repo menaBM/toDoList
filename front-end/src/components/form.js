@@ -5,23 +5,26 @@ export default function Form (props){
     const [task, setTask] = useState()
     const [date, setDate] = useState()
     
-    async function submitHandler(){
-        const response = await fetch("http://localhost:3000/new",{
+    async function submitHandler(event){
+        event.preventDefault()
+        const data = { "authorName":author, "task":task, "date":date};
+        props.setAllTasks(props.allTasks + 1)
+        const response = await fetch("http://localhost:3001/task/new",{
             method: "POST",
-            body: JSON.stringify({
-                authorName: author,
-                task: task,
-                date: date
-            })
+            headers: {"Content-Type" : "application/json"},
+            body: JSON.stringify(data)
         })
-        const data = await response.json();
+        // const data = await response.json();
         }
 
     return (
-        <form onSubmit={submitHandler}>
-            <input placeholder="author" onChange={(event) => setAuthor(event.target.value) } />
-            <input placeholder="task description" onChange= {(event)=> setTask(event.target.value)} />
-            <input placeholder="complete by date" onChange= {(event)=>setImmediate(event.target.value)} />
-            <button type="submit">create to do</button>
-        </form>
+        <div id="formContainer">
+            <form onSubmit={submitHandler}>
+                <h2>Write your tasks!</h2>
+                <input placeholder="Name..." onChange={(event) => setAuthor(event.target.value) } />
+                <input placeholder="Task Description..." onChange= {(event)=> setTask(event.target.value)} />
+                <input type = "date" placeholder="Complete By Date..." onChange= {(event)=>setDate(event.target.value)} />
+                <button id="createItButton"  type="submit">Create it!</button>
+            </form>
+        </div>
     )}
